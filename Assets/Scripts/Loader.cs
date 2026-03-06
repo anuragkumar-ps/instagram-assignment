@@ -3,6 +3,7 @@ using System.IO;
 using Data;
 using UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Loader : MonoBehaviour
 {
