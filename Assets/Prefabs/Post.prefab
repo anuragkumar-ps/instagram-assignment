@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 546.96}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6026240367559593874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 5815372086269423537, guid: 231a920d2bfd2454b92c30a11c31803c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -1439,6 +1439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commentContainer: {fileID: 2821419889985745472}
   commentPrefab: {fileID: 6191532219693478942, guid: e94ca231624e24ccdbec3d7ffaaa2084, type: 3}
+  parentPostRectTransform: {fileID: 7809472205821240572}
 --- !u!1 &4540316136420849602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,7 +2171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344919452272164537}
   m_Layer: 5
-  m_Name: tobenamed
+  m_Name: PostButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
