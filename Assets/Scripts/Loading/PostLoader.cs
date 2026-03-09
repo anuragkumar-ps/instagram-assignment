@@ -3,7 +3,7 @@ using Data;
 using UI;
 using UnityEngine;
 
-namespace PostLoader
+namespace Loading
 {
     public class PostLoader : MonoBehaviour
     {

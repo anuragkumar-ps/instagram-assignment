@@ -9,14 +9,14 @@ namespace UI
     {
         [SerializeField] private TMP_Text nameText;
         [SerializeField] private TMP_Text addressText;
-        [SerializeField] private TMP_Text hashtagsText;
+        [SerializeField] private TMP_Text descriptionText;
         [SerializeField] private Image postImage;
 
         public void Setup(PostData data, Sprite image)
         {
             nameText.text = data.name;
             addressText.text = data.address;
-            hashtagsText.text = data.hashtags;
+            descriptionText.text = "<color=\"black\"> tammyolson <color=\"blue\">  " + data.hashtags;
             postImage.sprite = image;
         }
     }

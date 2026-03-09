@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Input
+namespace UserInput
 {
     public class CommentInputManager : MonoBehaviour
     {
@@ -24,13 +24,13 @@ namespace Input
             if (string.IsNullOrWhiteSpace(inputText)) return;
         
             var comment = Instantiate(commentPrefab, commentContainer.transform);
-            comment.GetComponentsInChildren<TMP_Text>()[1].text = inputText;
+            comment.GetComponent<UI.CommentUI>().Setup(inputText);
             _inputField.text = "";
             _inputField.ActivateInputField();
         
+            LayoutRebuilder.ForceRebuildLayoutImmediate(comment.GetComponent<RectTransform>());
             LayoutRebuilder.ForceRebuildLayoutImmediate(commentContainer.GetComponent<RectTransform>());
             LayoutRebuilder.ForceRebuildLayoutImmediate(parentPostRectTransform);
-        
         }
 
         private void OnDestroy()
